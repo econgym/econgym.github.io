@@ -59,9 +59,9 @@
         AI agent-Driven Economic Simulation of Household Behavior
       </p>
       <p class="hero-description">
-        Design decision-making strategies for heterogeneous household agents in EconGym.
-        Make the behavioral distribution of 10,000 simulated agents match real-world
-        U.S. household survey data under given macroeconomic policies.
+        Two complementary tracks built on EconGym, spanning macro-level
+        <strong>multi-government policy coordination</strong> and micro-level
+        <strong>household behavior simulation</strong> — at a scale of 10,000 heterogeneous agents.
       </p>
       <div class="hero-tags">
         <span class="tag tag-llm">LLM</span>
@@ -112,24 +112,91 @@
     <div class="container">
       <div class="section-header">
         <span class="section-tag">The Challenge</span>
-        <h2 class="section-title">Competition Track</h2>
+        <h2 class="section-title">Competition Tracks</h2>
         <p class="section-desc">
-          One unified track exploring the open problem of large-scale individual behavior modeling.
+          Two complementary tracks tackling the open problem of large-scale economic agent modeling —
+          from macro-level multi-government coordination to micro-level household behavior.
         </p>
       </div>
 
+      <!-- Track 1 -->
       <div class="track-card">
         <div class="track-card-header">
-          <div class="track-number">Track 01</div>
+          <div class="track-number">Track 01 · Macro</div>
+          <h3 class="track-title">Multi-Government Policy Coordination</h3>
+        </div>
+        <div class="track-card-body">
+          <p class="track-summary">
+            Participants simultaneously control <strong>three government agents</strong> —
+            a <em>Fiscal Authority</em>, a <em>Central Bank</em>, and a <em>Pension Authority</em> —
+            within a shared economy of <strong>N = 10,000</strong> heterogeneous households, firms,
+            and banks. Each government has distinct observations, actions, and objectives, yet all
+            act upon the same economy. This task mirrors a pressing real-world challenge: fiscal,
+            monetary, and pension policies are designed by separate agencies, and their coordination
+            has profound consequences.
+          </p>
+
+          <div class="track-stats">
+            <div class="stat-item">
+              <div class="stat-value">3</div>
+              <div class="stat-label">Government Agents</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-value">10,000</div>
+              <div class="stat-label">Households · Firms · Banks</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-value">Multi</div>
+              <div class="stat-label">Objective Coordination</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-value">T2</div>
+              <div class="stat-label">Policies Sampled from Track 2</div>
+            </div>
+          </div>
+
+          <div class="behavior-grid">
+            <div class="behavior-item">
+              <div class="behavior-icon">🏛️</div>
+              <div class="behavior-name">Fiscal Authority</div>
+              <div class="behavior-sub">Taxes &amp; spending<br/>Growth &amp; equality</div>
+            </div>
+            <div class="behavior-item">
+              <div class="behavior-icon">🏦</div>
+              <div class="behavior-name">Central Bank</div>
+              <div class="behavior-sub">Reserve ratio &amp; rates<br/>Inflation stability</div>
+            </div>
+            <div class="behavior-item">
+              <div class="behavior-icon">👴</div>
+              <div class="behavior-name">Pension Authority</div>
+              <div class="behavior-sub">Retirement age &amp; contribution<br/>Long-term sustainability</div>
+            </div>
+          </div>
+
+          <div class="coming-soon-box">
+            <span class="coming-soon-badge">Details</span>
+            <h4>Coming Soon</h4>
+            <p>
+              Detailed submission guidelines, starter code, evaluation protocol, and dataset
+              access will be released shortly. Stay tuned via Discord and this website.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Track 2 -->
+      <div class="track-card" style="margin-top: 32px;">
+        <div class="track-card-header">
+          <div class="track-number">Track 02 · Micro</div>
           <h3 class="track-title">Household Behavior Simulation</h3>
         </div>
         <div class="track-card-body">
           <p class="track-summary">
-            Participants design decision-making strategies for heterogeneous household agents
-            in <strong>EconGym</strong>. Under a given macroeconomic policy, the goal is to make
-            the population-level behavioral distribution produced by 10,000 agents match
-            real U.S. household survey data
-            (<em>Survey of Consumer Finances</em>) as closely as possible — through dynamic simulation.
+            Participants design decision-making strategies for heterogeneous household agents in
+            <strong>EconGym</strong>. Under a given macroeconomic policy, the goal is to make the
+            population-level behavioral distribution produced by 10,000 agents match real U.S.
+            household survey data (<em>Survey of Consumer Finances</em>) as closely as possible —
+            through dynamic simulation. The resulting policy pool feeds back into Track 1.
           </p>
 
           <div class="track-stats">
@@ -253,23 +320,23 @@
       <div class="research-grid">
         <div class="research-item">
           <div class="research-num">01</div>
-          <h4>Heterogeneous Agent Modeling</h4>
-          <p>Capturing diverse preferences, constraints, and demographics across millions of households.</p>
+          <h4>Multi-Agent Policy Coordination</h4>
+          <p>Coordinating fiscal, monetary, and pension agents with conflicting objectives over a shared economy.</p>
         </div>
         <div class="research-item">
           <div class="research-num">02</div>
-          <h4>Long-Horizon Decision Making</h4>
-          <p>Lifelong consumption-savings-labor decisions under uncertainty and shocks.</p>
+          <h4>Heterogeneous Agent Modeling</h4>
+          <p>Capturing diverse preferences, constraints, and demographics across thousands of households.</p>
         </div>
         <div class="research-item">
           <div class="research-num">03</div>
           <h4>Distribution Matching</h4>
-          <p>Aligning agent populations to empirical survey data, not just point estimates.</p>
+          <p>Aligning simulated agent populations to empirical survey data, not just point estimates.</p>
         </div>
         <div class="research-item">
           <div class="research-num">04</div>
           <h4>LLM + RL Integration</h4>
-          <p>Combining the reasoning of foundation models with the optimization of reinforcement learning.</p>
+          <p>Combining the reasoning of foundation models with the optimization power of reinforcement learning.</p>
         </div>
       </div>
     </div>
