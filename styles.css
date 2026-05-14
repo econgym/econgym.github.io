@@ -517,6 +517,13 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   font-size: 15px;
 }
 
+.behavior-sub {
+  margin-top: 6px;
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
 .coming-soon-box {
   padding: 28px;
   background: linear-gradient(135deg, rgba(99,102,241,0.08), rgba(6,182,212,0.08));
